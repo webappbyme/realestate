@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="#">Real Estate</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Scrolling Effect (Banner Carousel) -->
+    <section class="banner">
+        <div class="carousel">
+            <img src="banner1.jpg" alt="Property 1">
+            <img src="banner2.jpg" alt="Property 2">
+            <img src="banner3.jpg" alt="Property 3">
+            <img src="banner4.jpg" alt="Property 4">
+            <img src="banner5.jpg" alt="Property 5">
+            <img src="banner6.jpg" alt="Property 6">
+            <img src="banner7.jpg" alt="Property 7">
+            <img src="banner9.jpg" alt="Property 8">
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section id="filters">
+        <h2>Filter Properties</h2>
+        <form id="filter-form">
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="100000" max="5000000" step="50000">
+            <span id="price-value">Max: $5,000,000</span>
+
+            <label for="location-filter">Location:</label>
+            <select id="location-filter">
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Boston">Boston</option>
+            </select>
+
+            <label for="type-filter">Property Type:</label>
+            <select id="type-filter">
+                <option value="Apartment">Apartment</option>
+                <option value="Cottage">Cottage</option>
+                <option value="House">House</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+        </form>
+    </section>
+
+    <!-- Property Listings Section -->
+    <section id="properties">
+        <h2>Available Properties</h2>
+        <div id="property-list" class="property-grid">
+            <!-- Property results go here -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide a comprehensive platform to explore real estate listings, ensuring a smooth buying and selling experience. Our goal is to make the process simple and accessible for everyone, from first-time buyers to experienced investors.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: info@realestate.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div>
+            <p>&copy; 2024 Real Estate Listings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
